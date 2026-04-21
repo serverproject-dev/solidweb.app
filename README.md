@@ -1,2 +1,2 @@
 # solidweb.app
-jss
+dummy repo readme solid jss
