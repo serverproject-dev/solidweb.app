@@ -1,0 +1,15 @@
+`#less /etc/jss/config.json` :
+```{
+  "port": 3000,
+  "host": "127.0.0.1",
+  "root": "/var/lib/jss/data",
+  "subdomains": true,
+  "baseDomain": "solidweb.app",
+  "conneg": true,
+  "notifications": true,
+  "idp": true,
+  "idpIssuer": "https://solidweb.app",
+  "mashlibCdn": true,
+  "defaultQuota": "100MB"
+}
+```
