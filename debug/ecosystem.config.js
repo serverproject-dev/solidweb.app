@@ -27,6 +27,7 @@ module.exports = {
 
       env_production: {
         NODE_ENV: 'production',
+        TOKEN_SECRET: '01234567890123456789',
         PATH: '/home/jss/.nvm/versions/node/v24.11.0/bin:' + process.env.PATH,
       },
     },
