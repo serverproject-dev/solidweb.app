@@ -1077,7 +1077,7 @@ cd /home/jss/.nvm/versions/node/v24.11.0/lib/node_modules/javascript-solid-serve
 sudo -u jss bash -c '
   source /home/jss/.nvm/nvm.sh
   cd /home/jss/.nvm/versions/node/v24.11.0/lib/node_modules/javascript-solid-server
-  npm install mashlib@1.3.2
+  npm install mashlib@latest
 '
 
 # Restart JSS
