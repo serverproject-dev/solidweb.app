@@ -245,7 +245,7 @@ Create `/etc/jss/config.json`:
   "idp": true,
   "idpIssuer": "https://solidweb.app",
   "mashlibCdn": true,
-  "defaultQuota": "1GB"
+  "defaultQuota": "100MB"
 }
 ```
 
