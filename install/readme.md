@@ -460,6 +460,7 @@ sudo -u kuma bash -c '
   pm2 start /home/kuma/ecosystem.config.js --env production
   pm2 status
 '
+```
 
 ### 8.4 Register PM2 startup hooks (mandatory two-step)
 
