@@ -1155,6 +1155,24 @@ WantedBy=multi-user.target
 
 ```
 ---
+## Appendix: root-acl
+
+```
+{
+  "@context": { "acl": "http://www.w3.org/ns/auth/acl#", "foaf": "http://xmlns.com/foaf/0.1/" },
+  "@graph": [
+    {
+      "@id": "#public",
+      "@type": "acl:Authorization",
+      "acl:agentClass": { "@id": "foaf:Agent" },
+      "acl:accessTo": { "@id": "./" },
+      "acl:default":  { "@id": "./" },
+      "acl:mode": [{ "@id": "acl:Read" }]
+    }
+  ]
+}
+```
+---
 
 ## Credits
 
