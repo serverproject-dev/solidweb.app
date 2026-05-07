@@ -1187,6 +1187,6 @@ figure in the development of WebID, Solid, and linked data on the web.
 
 ---
 
-*v6 — solidweb.app · 92.205.60.157 · Debian 13 Trixie (13.4) · Node.js 24.11.0 via nvm · PM2 · April 2026*
+*v7 — solidweb.app · 92.205.60.157 · Debian 13 Trixie (13.4) · Node.js 24.11.0 via nvm · PM2 · April 2026*
 - -
 this document: [https://hackmd.io/4faoeQ_USYKMXjreAd3Ldg?view](https://hackmd.io/mUFa-EmTTuabimRspyKtcg?view)
