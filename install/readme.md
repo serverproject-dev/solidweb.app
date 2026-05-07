@@ -263,7 +263,7 @@ Create `/etc/jss/config.json`:
 | `idp` | ✅ | `true` | Built-in Identity Provider |
 | `idpIssuer` | ⚠️ gh-pages only | `"https://solidweb.app"` | Not in canonical config table; in extended docs. No trailing slash |
 | `mashlibCdn` | ✅ | `true` | SolidOS browser from unpkg CDN |
-| `defaultQuota` | ✅ | `"1GB"` | Per-pod storage limit |
+| `defaultQuota` | ✅ | `"100MB"` | Per-pod storage limit |
 
 > **Open registration:** `inviteOnly` key is absent → registration is fully open.
 
