@@ -13,10 +13,10 @@
     <div class="header-center">
       <h1 class="title">Welcome to Javascript Solid Server beta</h1>
     </div>
-    <div class="header-right" id="SolidSignInOrSignUpBox"></div>
-    <div class="actions">
+    <div class="header-right" id="integrity">
+    <div class="SolidSignInOrSignUpBox">
       <a href="/idp/register"><button type="submit" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #efe;">Sign up</button></a>
-      <a href="here dynamic link with client id"><button id="login" type="submit" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #eef;">Log in</button></a>
+      <input type="button" value="Log in" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #eef;">
     </div>
 <a href = "https://github.com/SolidOS/userguide"><img src="https://solidweb.me/somewhereelse/qm.svg"></a>
   </div>
@@ -96,5 +96,14 @@ color: black;
 <br /><br /><br /><br /><br /><br />
 <div align = "center"><a href = "https://meisdata.io/">meisdata.io</a>, <a href = "https://tools.keycdn.com/geo?host=solidweb.app">Strasbourg</a></div>
 </div>
+<script>
+(function() {
+  var s = document.createElement('script');
+  s.src = 'https://unpkg.com/mashlib@2.0.0/dist/mashlib.min.js';
+  s.onload = function() { panes.runDataBrowser(); };
+  s.onerror = function() { document.body.innerHTML = '<p>Failed to load Mashlib from CDN</p>'; };
+  document.head.appendChild(s);
+})();
+</script>
 </body>
 </html>
