@@ -6,6 +6,21 @@
 <link rel="icon" href="https://www.serverproject.de/favicon.ico" type="image/x-ico; charset=binary"/>
 </head>
 <body>
+<div class="header">
+    <div class="header-left">
+   <a href="https://solidweb.app/"><img class="logo-img" src="https://www.serverproject.de/logo2.png"></a> 
+    </div>
+    <div class="header-center">
+      <h1 class="title">Welcome to Javascript Solid Server beta</h1>
+    </div>
+    <div class="header-right" id="SolidSignInOrSignUpBox"></div>
+    <div class="actions">
+      <a href="/idp/register"><button type="submit" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #efe;">Sign up</button></a>
+      <a href="here dynamic link with client id"><button id="login" type="submit" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #eef;">Log in</button></a>
+    </div>
+<a href = "https://github.com/SolidOS/userguide"><img src="https://solidweb.me/somewhereelse/qm.svg"></a>
+  </div>
+</div>
 <style>
 a:hover {color: red;}
 a
@@ -18,6 +33,47 @@ body {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: black;
 }
+.header {
+    box-shadow: 0px 1px 4px rgba(0,0.0,0.2) !important;
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0.0,0.2) !important;
+    text-align: center !important;
+    color: #7C4DFF;
+    padding: 10px;
+    display: inline-flex;
+    width: 99%;
+  }
+
+  .header-left {
+    text-align: left;
+    margin-top: 0.67em;
+    width: 19%;
+  }
+
+  .header-center {
+    margin: auto;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .header-right {
+      display: block !important;
+    }
+  }
+
+  .header-right {
+    display: inline-flex;
+    margin-top: 0.67em;
+    min-width: 19%;
+  }
+
+  .logo-img {
+    width: 50px;
+  }
+  
+  .title {
+      color: #7C4DFF;
+      font-size: 2em;
+      line-height: 1em;
+  }
 </style>
 <p align = "center"><img src = "solidemblem_new.svg" alt = "Solid" /></p>
 <br /><hr /><br />
@@ -34,7 +90,7 @@ color: black;
 <a href = "https://monitor.solidweb.app">netdata (maintenance)</a><br />
 <a href = "https://status.solidweb.app">kuma (maintenance)</a><br />
 <a href = "https://github.com/serverproject-dev/solidweb.app/blob/main/src/index.html">this index.html</a><br />
-<a href = "https://github.com/serverproject-dev/solidweb.app/blob/main/install/readme.md">howto</a><br /> 
+<a href = "https://github.com/serverproject-dev/solidweb.app/blob/main/install/readme.md">howto</a><br />
 <a href = "https://serverproject.de/files/solidweb_app_terms.txt">terms</a><br />
 <b>the <a href = "https://solidproject.org">Solid</a> Project</b>
 <br /><br /><br /><br /><br /><br />
