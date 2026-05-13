@@ -11,7 +11,7 @@
   "idp": true,
   "idpIssuer": "https://solidweb.app",
   "mashlibCdn": true,
-  "mashliVersion": "2.2.0",
+  "mashlibVersion": "2.2.0",
   "defaultQuota": "100MB"
 }
 ```
