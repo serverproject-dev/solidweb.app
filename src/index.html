@@ -1,6 +1,6 @@
 <!-- location: "/" -->
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <title>jss</title>
 <link rel="icon" href="https://www.serverproject.de/favicon.ico" type="image/x-ico; charset=binary"/>
@@ -10,101 +10,112 @@
 a:hover {color: red;}
 a
 {
-color: blue;
-text-decoration-line: underline;
-text-decoration-color: red;
+  color: blue;
+  text-decoration-line: underline;
+  text-decoration-color: red;
 }
 body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
 }
 .header {
-    box-shadow: 0px 1px 4px rgba(0,0.0,0.2) !important;
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0.0,0.2) !important;
-    text-align: center !important;
-    color: #7C4DFF;
-    padding: 10px;
-    display: inline-flex;
-    width: 99%;
-  }
-
-  .header-left {
-    text-align: left;
-    margin-top: 0.67em;
-    width: 19%;
-  }
-
-  .header-center {
-    margin: auto;
-  }
-
-  @media screen and (max-width: 1000px) {
-    .header-right {
-      display: block !important;
-    }
-  }
-
+  box-shadow: 0px 1px 4px rgba(0,0.0,0.2) !important;
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0.0,0.2) !important;
+  text-align: center !important;
+  color: #7C4DFF;
+  padding: 10px;
+  display: inline-flex;
+  width: 99%;
+}
+.header-left {
+  text-align: left;
+  margin-top: 0.67em;
+  width: 19%;
+}
+.header-center {
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
   .header-right {
-    display: inline-flex;
-    margin-top: 0.67em;
-    min-width: 19%;
+    display: block !important;
   }
-
-  .logo-img {
-    width: 50px;
-  }
-  
-  .title {
-      color: #7C4DFF;
-      font-size: 2em;
-      line-height: 1em;
-  }
+}
+.header-right {
+  display: inline-flex;
+  margin-top: 0.67em;
+  min-width: 19%;
+}
+.logo-img {
+  width: 50px;
+}
+.title {
+  color: #7C4DFF;
+  font-size: 2em;
+  line-height: 1em;
+}
 </style>
+
 <div class="header">
   <div class="header-left">
-   <a href="https://solidweb.app/"><img class="logo-img" src="https://www.serverproject.de/logo2.png"></a> 
+    <a href="https://solidweb.app/"><img class="logo-img" src="https://www.serverproject.de/logo2.png"></a>
   </div>
   <div class="header-center">
     <h1 class="title">Welcome to Javascript Solid Server beta</h1>
   </div>
   <div class="header-right" id="integrity">
     <div class="SolidSignInOrSignUpBox">
-      <a href="/idp/register"><button type="submit" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #efe;">Sign up</button></a>
-      <input type="button" value="Log in" style="padding: 1em; border-radius:0.2em; font-size: 100%;margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;background-color: #eef;">
+      <!--
+        id="btn-signup" — used as a stable hook; href unchanged.
+      -->
+      <a href="/idp/register">
+        <button id="btn-signup" type="button"
+          style="padding: 1em; border-radius:0.2em; font-size: 100%;
+                 margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;
+                 background-color: #efe;">Sign up</button>
+      </a>
+      <!--
+        id="btn-login" — picked up by solidlogin.js.
+        On click: opens the Solid provider-picker dialog (logged out)
+                  or logs out (logged in, label changes to short WebID).
+      -->
+      <button id="btn-login" type="button"
+        style="padding: 1em; border-radius:0.2em; font-size: 100%;
+               margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;
+               background-color: #eef;">Log in</button>
     </div>
   </div>
-<a href = "https://github.com/SolidOS/userguide"><img src="https://solidweb.me/somewhereelse/qm.svg"></a>
+  <a href="https://github.com/SolidOS/userguide"><img src="https://solidweb.me/somewhereelse/qm.svg"></a>
 </div>
-<p align = "center"><img src = "solidemblem_new.svg" alt = "Solid" /></p>
+
+<p align="center"><img src="solidemblem_new.svg" alt="Solid" /></p>
 <hr /><br />
 <div>
-<dd>this is javascript-solid-server (jss) 0.0.201 mashlib 2.2.0</dd>
-<dd>experimental (beta testing), backend, we're releasing fast</dd>
-<dd><a href = "/idp/register">Sign up (test)</a></dd>
-<dd>to login you will need a <a href = "https://solidproject.org/apps">Solid app</a> or goto <code>https://pod.solidweb.app/</code></dd>
-<br /><hr /><br />
-<a href = "https://jss.live">homepage</a><br />
-<a href = "https://github.com/JavaScriptSolidServer/JavaScriptSolidServer">repo</a><br />
-<a href = "https://www.npmjs.com/package/javascript-solid-server">on npmjs</a><br />
-<a href = "https://github.com/serverproject-dev/solidweb.app/blob/main/LICENSE">license</a><br />
-<a href = "https://monitor.solidweb.app">netdata (maintenance)</a><br />
-<a href = "https://status.solidweb.app">kuma (maintenance)</a><br />
-<a href = "https://github.com/serverproject-dev/solidweb.app/blob/main/src/index.html">this index.html</a><br />
-<a href = "https://github.com/serverproject-dev/solidweb.app/blob/main/install/readme.md">howto</a><br />
-<a href = "https://serverproject.de/files/solidweb_app_terms.txt">terms</a><br />
-<b>the <a href = "https://solidproject.org">Solid</a> Project</b>
-<br /><br /><br /><br /><br />
-<div align = "center"><a href = "https://meisdata.io/">meisdata.io</a>, <a href = "https://tools.keycdn.com/geo?host=solidweb.app">Strasbourg</a></div>
+  <dd>this is javascript-solid-server (jss) 0.0.201 mashlib 2.2.0</dd>
+  <dd>experimental (beta testing), backend, we're releasing fast</dd>
+  <dd><a href="/idp/register">Sign up (test)</a></dd>
+  <dd>to login with an <a href="https://solidproject.org/apps">Solid app</a> other than SolidOS frontend point the app to here, goto <code>https://pod.solidweb.app/</code> directly or use <b>Login</b></dd>
+  <br /><hr /><br />
+  <a href="https://jss.live">homepage</a><br />
+  <a href="https://github.com/JavaScriptSolidServer/JavaScriptSolidServer">repo</a><br />
+  <a href="https://www.npmjs.com/package/javascript-solid-server">on npmjs</a><br />
+  <a href="https://github.com/serverproject-dev/solidweb.app/blob/main/LICENSE">license</a><br />
+  <a href="https://monitor.solidweb.app">netdata (maintenance)</a><br />
+  <a href="https://status.solidweb.app">kuma (maintenance)</a><br />
+  <a href="https://github.com/serverproject-dev/solidweb.app/blob/main/src/index.html">this index.html</a><br />
+  <a href="https://github.com/serverproject-dev/solidweb.app/blob/main/install/readme.md">howto</a><br />
+  <a href="https://serverproject.de/files/solidweb_app_terms.txt">terms</a><br />
+  <b>the <a href="https://solidproject.org">Solid</a> Project</b>
+  <br /><br /><br /><br /><br />
+  <div align="center">
+    <a href="https://meisdata.io/">meisdata.io</a>,
+    <a href="https://tools.keycdn.com/geo?host=solidweb.app">Strasbourg</a>
+  </div>
 </div>
-<!-- we want to put this header on top of the page, instead of the old UI header -->
-<!-- <script>
-(function() {
-  var s = document.createElement('script');
-  s.src = 'https://unpkg.com/mashlib@2.2.0/dist/mashlib.min.js';
-  s.onload = function() { panes.runDataBrowser(); };
-  s.onerror = function() { document.body.innerHTML = '<p>Failed to load Mashlib from CDN</p>'; };
-  document.head.appendChild(s);
-})();
-</script> -->
+<!--
+  Solid-OIDC login widget.
+  Hooks #btn-login; strips all Nostr code from the upstream xlogin.js.
+  Credits: based on xlogin.js by Melvin Carvalho (AGPL-3.0-or-later).
+-->
+<script src="solidlogin.js"></script>
 </body>
 </html>
