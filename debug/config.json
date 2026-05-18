@@ -10,6 +10,7 @@
   "notifications": true,
   "idp": true,
   "idpIssuer": "https://solidweb.app",
+  "git": true,
   "mashlibCdn": true,
   "mashlibVersion": "2.2.0",
   "defaultQuota": "100MB"
