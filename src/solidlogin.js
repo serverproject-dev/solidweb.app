@@ -74,7 +74,7 @@
   var _solidReady = import('https://esm.sh/gh/JavaScriptSolidServer/solid-oidc/solid-oidc.js')
     .then(function (mod) { _SolidSession = mod.Session || mod.default; })
     .catch(function () {
-      return import('https://esm.sh/solid-oidc@0.0.8')
+      return import('https://esm.sh/solid-oidc@0.0.9')
         .then(function (mod) { _SolidSession = mod.Session || mod.default; });
     });
 
