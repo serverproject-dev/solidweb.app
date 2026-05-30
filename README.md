@@ -8,5 +8,7 @@ this repo has 4 categories:
 and `solidlogin.js`<br/>
 
 [server root](https://solidweb.app) <br />
-[sample pod](https://testpro.solidweb.app)
+[sample pod](https://testpro.solidweb.app)<br />
+
+WARNING: certs 2026-07-19
 
